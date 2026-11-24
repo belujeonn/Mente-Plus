@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mente+ | Conocete mejor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#">
+    <span class="brand-mark">✳</span> mente<span>+</span>
+  </a>
+  <span class="top-note">UN ESPACIO PARA CONOCERTE</span>
+</header>
+
+<main>
+
+  <section id="home" class="screen hero">
+    <div class="hero-copy">
+      <span class="eyebrow">CONOCIMIENTO · CURIOSIDAD · AUTODESCUBRIMIENTO</span>
+
+      <h1>Tu mente tiene<br><em>mucho que contar.</em></h1>
+
+      <p class="lead">
+        Explorá tu razonamiento y tus preferencias
+        con experiencias breves, visuales y entretenidas.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary" data-start="iq">
+          Explorar razonamiento ↗
+        </button>
+
+        <button class="btn btn-secondary" data-start="personality">
+          Conocer mi estilo ↗
+        </button>
+      </div>
+
+      <p class="micro">
+        Sin apuro. A tu ritmo. Resultados explicados con claridad.
+      </p>
+    </div>
+
+    <div class="hero-art">
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+
+      <div class="art-card">
+        <span class="art-spark">✳</span>
+        <div class="art-shape shape-circle"></div>
+        <div class="art-shape shape-triangle"></div>
+        <div class="art-shape shape-square"></div>
+        <span class="art-caption">PENSÁ · DESCUBRÍ</span>
+      </div>
+
+      <span class="floating-note note-one">ideas nuevas</span>
+      <span class="floating-note note-two">∞ posibilidades</span>
+    </div>
+  </section>
+
+  <section id="test" class="screen hidden test-screen">
+
+    <div class="test-head">
+      <button id="back-home" class="back-btn">← Inicio</button>
+      <span id="test-kicker" class="eyebrow">EXPLORACIÓN</span>
+      <span id="test-count" class="counter">1 / 8</span>
+    </div>
+
+    <div class="progress-track">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div class="question-wrap">
+      <p id="test-label" class="eyebrow">RAZONAMIENTO VISUAL</p>
+
+      <h2 id="question">¿Qué figura continúa el patrón?</h2>
+
+      <p id="question-help" class="question-help">
+        Observá las figuras y elegí la opción correcta.
+      </p>
+
+      <div id="visual" class="visual"></div>
+      <div id="options" class="options"></div>
+    </div>
+
+    <p class="micro center">
+      No hay límite de tiempo. Elegí la opción que te parezca correcta.
+    </p>
+  </section>
+
+ <section id="paywall" class="screen hidden paywall-screen">
+
+  <div class="pay-card">
+    <div class="pay-icon">✦</div>
+
+    <span class="eyebrow">TU EXPERIENCIA ESTÁ COMPLETA</span>
+
+    <h2>Tu análisis está<br><em>listo para descubrir.</em></h2>
+
+    <p id="pay-description">
+      Completaste el test. Desbloqueá tu informe personalizado.
+    </p>
+
+    <div class="price-line">
+      <span>Acceso al informe completo</span>
+      <strong id="report-price">$ —</strong>
+    </div>
+
+    <div class="payment-methods">
+      <h3>Elegí tu método de pago</h3>
+
+      <button id="mercadopago-btn" class="btn btn-primary full">
+        <span>Mercado Pago</span> ↗
+      </button>
+
+      <button id="card-payment-btn" class="btn btn-secondary full">
+        <span>Tarjeta de crédito o débito</span> ↗
+      </button>
+
+      <p class="fine-print">
+        El informe se desbloqueará una vez confirmado el pago.
+      </p>
+    </div>
+
+    <button id="restart-from-pay" class="text-btn">
+      Volver al inicio
+    </button>
+  </div>
+
+</section>
+
+<section id="result" class="screen hidden result-screen">
+
+  <div class="result-container">
+
+    <button id="back-home-result" class="back-btn">
+      ← Volver al inicio
+    </button>
+
+    <div id="result-content"></div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <span>mente+ © 2026</span>
+  <span>Una experiencia de autoconocimiento.</span>
+</footer>
+
+</body>
+</html>
